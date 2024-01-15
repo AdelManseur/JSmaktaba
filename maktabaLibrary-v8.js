@@ -30,6 +30,10 @@ var maktaba = (function() {
         let button = document.createElement('button');
         document.body.appendChild(button);
       }
+      if (name === 'output') { // fixed the typo here, it should be 'button' not 'buttton'
+        let output = document.createElement('output');
+        document.body.appendChild(output);
+      }
     }
   };
 })();
