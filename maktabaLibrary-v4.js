@@ -9,7 +9,7 @@ var maktaba = (function() {
   }
 
   function validateElementName (name) {
-    if (typeof number !== 'string') {
+    if (typeof name !== 'string') {
       throw new Error('Input must be a string');
     }
     }
