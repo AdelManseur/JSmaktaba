@@ -1,5 +1,3 @@
-// mathCalculator.js
-
 var maktaba = (function() {
   // Private helper function for internal use
   function validateInput(number) {
@@ -8,11 +6,11 @@ var maktaba = (function() {
     }
   }
 
-  function validateElementName (name) {
+  function validateElementName(name) {
     if (typeof name !== 'string') {
       throw new Error('Input must be a string');
     }
-    }
+  }
 
   // Public methods exposed in the library
   return {
@@ -28,9 +26,9 @@ var maktaba = (function() {
     
     createButton: function(name) {
       validateElementName(name);
-      if (name === 'buttton') {
-      let button = document.createElement('button');
-      document.body.appendChild(button);
+      if (name === 'button') { // fixed the typo here, it should be 'button' not 'buttton'
+        let button = document.createElement('button');
+        document.body.appendChild(button);
       }
     }
   };
