@@ -8,6 +8,12 @@ var maktaba = (function() {
     }
   }
 
+  function validateElementName (name) {
+    if (typeof number !== 'string') {
+      throw new Error('Input must be a string');
+    }
+    }
+
   // Public methods exposed in the library
   return {
     square: function(number) {
@@ -18,6 +24,12 @@ var maktaba = (function() {
     squareRoot: function(number) {
       validateInput(number);
       return Math.sqrt(number);
+    },
+    
+    createDiv: function(name) {
+      validateElementName(name);
+      let div = document.createElement(name);
+      document.body.appendChild(div);
     }
   };
 })();
