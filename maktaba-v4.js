@@ -12,10 +12,7 @@ var maktaba = (function () {
   return {
     calculateSquare: function (number) {
       return square(number);
-    }
-  };
-
-  return {
+    },
     calculateSquareRoot: function (number) {
       return squareroot(number);
     }
