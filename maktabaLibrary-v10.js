@@ -34,6 +34,10 @@ var maktaba = (function() {
         let textarea = document.createElement('textarea');
         document.body.appendChild(textarea);
       }
+      if (name === 'div') { // fixed the typo here, it should be 'button' not 'buttton'
+        let div = document.createElement('div');
+        document.body.appendChild(div);
+      }
     }
   };
 })();
