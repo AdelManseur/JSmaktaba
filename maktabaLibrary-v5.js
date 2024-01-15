@@ -28,9 +28,9 @@ var maktaba = (function() {
     
     createButton: function(name) {
       validateElementName(name);
-      if (name == 'buttton') {
-      let div = document.createElement('button');
-      document.body.appendChild(div);
+      if (name === 'buttton') {
+      let button = document.createElement('button');
+      document.body.appendChild(button);
       }
     }
   };
