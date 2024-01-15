@@ -24,7 +24,7 @@ var maktaba = (function() {
       return Math.sqrt(number);
     },
     
-    createButton: function(name) {
+    create: function(name) {
       validateElementName(name);
       if (name === 'button') { // fixed the typo here, it should be 'button' not 'buttton'
         let button = document.createElement('button');
