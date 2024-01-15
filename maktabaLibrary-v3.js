@@ -26,10 +26,12 @@ var maktaba = (function() {
       return Math.sqrt(number);
     },
     
-    createDiv: function(name) {
+    createButton: function(name) {
       validateElementName(name);
-      let div = document.createElement('"name"');
+      if (name == 'buttton') {
+      let div = document.createElement('button');
       document.body.appendChild(div);
+      }
     }
   };
 })();
