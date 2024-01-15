@@ -1,5 +1,5 @@
 // myMathLibrary.js
-var myMathLibrary = (function () {
+var maktaba = (function () {
   // Private function
   function square(x) {
     return x * x;
