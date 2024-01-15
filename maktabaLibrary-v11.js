@@ -41,3 +41,5 @@ var maktaba = (function() {
     }
   };
 })();
+
+export default maktaba;
