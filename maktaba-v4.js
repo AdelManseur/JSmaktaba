@@ -1,20 +1,20 @@
-var maktaba = (function () {
-  // Private function
-  function square(x) {
-    return x * x;
-  }
+var myMathLibrary = (function () {
+      // Private functions
+      function square(x) {
+        return x * x;
+      }
 
-  function squareroot(x){
-    return sqrt(x);
-  }
+      function squareRoot(x) {
+        return Math.sqrt(x);
+      }
 
-  // Public API (an object)
-  return {
-    calculateSquare: function (number) {
-      return square(number);
-    },
-    calculateSquareRoot: function (number) {
-      return squareroot(number);
-    }
-  };
-})();
+      // Public API (an object)
+      return {
+        calculateSquare: function (number) {
+          return square(number);
+        },
+        calculateSquareRoot: function (number) {
+          return squareRoot(number);
+        }
+      };
+    })();
