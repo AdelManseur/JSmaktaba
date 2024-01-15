@@ -1,4 +1,4 @@
- var myMathLibrary = (function () {
+ var maktaba = (function () {
       // Private functions
       function square(x) {
         return x * x;
