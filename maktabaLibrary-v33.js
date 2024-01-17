@@ -148,6 +148,7 @@
       console.log('ID:', id);
       console.log('Class:', className);
       console.log('innerHTML:', innerHTML);
+      console.log('isCreated:', isCreated);
     },
    remove: function (id) {
         const elementToRemove = document.getElementById(id);
