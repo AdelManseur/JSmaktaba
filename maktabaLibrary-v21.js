@@ -35,7 +35,7 @@ var maktaba = (function() {
     if (typeof innerHTML === 'undefined' || typeof innerHTML !== 'string') {
       throw new Error('innerHTML must be a string');
     }
-    if (typeof iscreated === 'undefined' || innerHTML !== 'true' || innerHTML !== 'true') {
+    if (typeof iscreated === 'undefined' || isCreated !== 'string') {
       throw new Error('isCreated must be a string');
     }
   }
