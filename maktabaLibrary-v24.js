@@ -68,7 +68,7 @@ var maktaba = (function() {
 
         button.innerHTML = innerHTML;
         document.body.appendChild(button);
-        if(isCreated === 'false'){
+        if(isCreated === false){
           button.remove();
         }
         console.log('type:', name );
