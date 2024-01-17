@@ -7,7 +7,7 @@ var maktaba = (function() {
   }
 
   function validateElementName(name, options = {}) {
-    const { id, className, innerHTML } = options;
+    const { id, className, innerHTML, isCreated } = options;
 
     if (typeof name !== 'string') {
       throw new Error('Input must be a string');
@@ -35,6 +35,9 @@ var maktaba = (function() {
     if (typeof innerHTML === 'undefined' || typeof innerHTML !== 'string') {
       throw new Error('innerHTML must be a string');
     }
+    if (typeof iscreated === 'undefined' || innerHTML !== 'true' || innerHTML !== 'true') {
+      throw new Error('isCreated must be a string');
+    }
   }
 
   // Public methods exposed in the library
@@ -51,7 +54,7 @@ var maktaba = (function() {
     
     create: function(name, options = {}) {
       validateElementName(name, options);
-      const { id, className, innerHTML } = options;
+      const { id, className, innerHTML, isCreated } = options;
 
       if (name === 'button') {
         let button = document.createElement('button');
@@ -65,6 +68,9 @@ var maktaba = (function() {
 
         button.innerHTML = innerHTML;
         document.body.appendChild(button);
+        if(isCreated === 'false'){
+          button.remove();
+        }
         console.log('type:', name );
         console.log('ID:', id);
         console.log('Class:', className);
