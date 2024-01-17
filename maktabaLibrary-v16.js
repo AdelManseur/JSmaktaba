@@ -38,7 +38,7 @@ var maktaba = (function() {
         button.classList.add(className);
         document.body.appendChild(button);
         console.log(id);
-        consoe.log(className);
+        console.log(className);
       }
       if (name === 'textarea') { // fixed the typo here, it should be 'button' not 'buttton'
         let textarea = document.createElement('textarea');
@@ -46,7 +46,7 @@ var maktaba = (function() {
         textarea.classList.add(className);
         document.body.appendChild(textarea);
         console.log(id);
-        consoe.log(className);
+        console.log(className);
       }
       if (name === 'div') { // fixed the typo here, it should be 'button' not 'buttton'
         let div = document.createElement('div');
@@ -54,7 +54,7 @@ var maktaba = (function() {
         div.classList.add(className);
         document.body.appendChild(div);
         console.log(id);
-        consoe.log(className);
+        console.log(className);
       }
     }
   };
