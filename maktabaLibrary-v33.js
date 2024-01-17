@@ -75,6 +75,9 @@
        case 'input':
           createdElement = document.createElement('input');
           break;
+       case 'output':
+          createdElement = document.createElement('output');
+          break;
        case 'br':
           createdElement = document.createElement('br');
           break;
