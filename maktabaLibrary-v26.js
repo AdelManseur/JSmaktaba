@@ -95,5 +95,14 @@
       console.log('Class:', className);
       console.log('innerHTML:', innerHTML);
     },
+   remove: function (id) {
+        const elementToRemove = document.getElementById(id);
+    if(elementToRemove){
+     elementToRemove.remove();
+    }
+    if{
+     console.warn(`Element with ID '${id}' not found.`);
+    }
+   }
   };
 })();
