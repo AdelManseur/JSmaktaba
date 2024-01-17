@@ -7,7 +7,7 @@
   }
 
   function validateElementName(name, options = {}) {
-    const { id, className: 'gray', innerHTML: " ", isCreated: true } = options;
+    const { id, className = 'gray', innerHTML = " ", isCreated = true } = options;
 
     if (typeof name !== 'string') {
       throw new Error('Input must be a string');
@@ -55,7 +55,7 @@
 
     create: function (name, options = {}) {
       validateElementName(name, options);
-      const { id, className: 'gray', innerHTML: " ", isCreated: true } = options;
+      const { id, className = 'gray', innerHTML = " ", isCreated = true } = options;
 
       let createdElement;
 
