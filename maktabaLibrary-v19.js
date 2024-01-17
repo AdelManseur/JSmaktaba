@@ -65,8 +65,10 @@ var maktaba = (function() {
 
         button.innerHTML = innerHTML;
         document.body.appendChild(button);
+        console.log('type:', name );
         console.log('ID:', id);
         console.log('Class:', className);
+        console.log('innerHTML:', innerHTML);
       }
 
       if (name === 'textarea') {
@@ -81,8 +83,10 @@ var maktaba = (function() {
 
         textarea.innerHTML = innerHTML;
         document.body.appendChild(textarea);
+        console.log('type:', name );
         console.log('ID:', id);
         console.log('Class:', className);
+        console.log('innerHTML:', innerHTML);
       }
 
       if (name === 'div') {
@@ -97,8 +101,10 @@ var maktaba = (function() {
 
         div.innerHTML = innerHTML;
         document.body.appendChild(div);
+        console.log('type:', name );
         console.log('ID:', id);
         console.log('Class:', className);
+        console.log('innerHTML:', innerHTML);
       }
     }
   };
