@@ -69,6 +69,15 @@
         case 'div':
           createdElement = document.createElement('div');
           break;
+       case 'a':
+          createdElement = document.creteElement('a');
+          break;
+       case 'input':
+          createdElement = document.creteElement('input');
+          break;
+       case 'br':
+          createdElement = document.creteElement('br');
+          break;
         default:
           throw new Error(`Unsupported element type: ${name}`);
       }
