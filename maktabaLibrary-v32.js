@@ -7,7 +7,7 @@
   }
 
   function validateElementName(name, options = {}) {
-    const { id, className = 'gray', innerHTML = " ", isCreated = true } = options;
+    const { id = 'maktaba', className = 'gray', innerHTML = " ", isCreated = true } = options;
 
     if (typeof name !== 'string') {
       throw new Error('Input must be a string');
@@ -55,7 +55,7 @@
 
     create: function (name, options = {}) {
       validateElementName(name, options);
-      const { id, className = 'gray', innerHTML = " ", isCreated = true } = options;
+      const { id = 'maktaba', className = 'gray', innerHTML = " ", isCreated = true } = options;
 
       let createdElement;
 
@@ -77,6 +77,51 @@
           break;
        case 'br':
           createdElement = document.createElement('br');
+          break;
+       case 'p':
+          createdElement = document.createElement('p');
+          break;
+       case 'h1':
+          createdElement = document.createElement('h1');
+          break;
+       case 'h2':
+          createdElement = document.createElement('h2');
+          break;
+       case 'h3':
+          createdElement = document.createElement('h3');
+          break;
+       case 'h4':
+          createdElement = document.createElement('h4');
+          break;
+       case 'h5':
+          createdElement = document.createElement('h5');
+          break;
+       case 'h6':
+          createdElement = document.createElement('h6');
+          break;
+       case 'strong':
+          createdElement = document.createElement('strong');
+          break;
+       case 'em':
+          createdElement = document.createElement('em');
+          break;
+       case 'span':
+          createdElement = document.createElement('span');
+          break;
+       case 'q':
+          createdElement = document.createElement('q');
+          break;
+       case 'abbr':
+          createdElement = document.createElement('abbr');
+          break;
+       case 'cite':
+          createdElement = document.createElement('cite');
+          break;
+       case 'code':
+          createdElement = document.createElement('code');
+          break;
+       case 'blockquote':
+          createdElement = document.createElement('blockquote');
           break;
         default:
           throw new Error(`Unsupported element type: ${name}`);
@@ -110,7 +155,7 @@
      elementToRemove.remove();
     }
     else{
-     console.warn(`Element with ID '${id}' not found.`);
+     console.warn(`Element with ID: '${id}', not found.`);
     }
    }
   };
