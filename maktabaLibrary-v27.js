@@ -100,7 +100,7 @@
     if(elementToRemove){
      elementToRemove.remove();
     }
-    if{
+    else{
      console.warn(`Element with ID '${id}' not found.`);
     }
    }
