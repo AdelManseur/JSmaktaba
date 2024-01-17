@@ -6,8 +6,11 @@ var maktaba = (function() {
     }
   }
 
-  function validateElementName(name) {
+  function validateElementName(name, id) {
     if (typeof name !== 'string') {
+      throw new Error('Input must be a string');
+    }
+    if (typeof id !== 'string') {
       throw new Error('Input must be a string');
     }
   }
@@ -24,10 +27,11 @@ var maktaba = (function() {
       return Math.sqrt(number);
     },
     
-    create: function(name) {
-      validateElementName(name);
+    create: function(name, id) {
+      validateElementName(name, id);
       if (name === 'button') { // fixed the typo here, it should be 'button' not 'buttton'
         let button = document.createElement('button');
+        button.setAttribute('id', id);
         document.body.appendChild(button);
       }
       if (name === 'textarea') { // fixed the typo here, it should be 'button' not 'buttton'
