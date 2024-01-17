@@ -33,6 +33,7 @@ var maktaba = (function() {
         let button = document.createElement('button');
         button.setAttribute('id', id);
         document.body.appendChild(button);
+        console.log(id);
       }
       if (name === 'textarea') { // fixed the typo here, it should be 'button' not 'buttton'
         let textarea = document.createElement('textarea');
