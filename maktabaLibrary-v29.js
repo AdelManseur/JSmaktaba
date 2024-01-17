@@ -70,13 +70,13 @@
           createdElement = document.createElement('div');
           break;
        case 'a':
-          createdElement = document.creteElement('a');
+          createdElement = document.createElement('a');
           break;
        case 'input':
-          createdElement = document.creteElement('input');
+          createdElement = document.createElement('input');
           break;
        case 'br':
-          createdElement = document.creteElement('br');
+          createdElement = document.createElement('br');
           break;
         default:
           throw new Error(`Unsupported element type: ${name}`);
