@@ -6,11 +6,14 @@ var maktaba = (function() {
     }
   }
 
-  function validateElementName(name, id) {
+  function validateElementName(name, id, className) {
     if (typeof name !== 'string') {
       throw new Error('Input must be a string');
     }
     if (typeof id !== 'string') {
+      throw new Error('Input must be a string');
+    }
+    if (typeof className !== 'string') {
       throw new Error('Input must be a string');
     }
   }
@@ -27,21 +30,31 @@ var maktaba = (function() {
       return Math.sqrt(number);
     },
     
-    create: function(name, id) {
-      validateElementName(name, id);
+    create: function(name, id, className) {
+      validateElementName(name, id, className);
       if (name === 'button') { // fixed the typo here, it should be 'button' not 'buttton'
         let button = document.createElement('button');
         button.setAttribute('id', id);
+        button.classList.add(className);
         document.body.appendChild(button);
         console.log(id);
+        consoe.log(className);
       }
       if (name === 'textarea') { // fixed the typo here, it should be 'button' not 'buttton'
         let textarea = document.createElement('textarea');
+        textarea.setAttribute('id', id);
+        textarea.classList.add(className);
         document.body.appendChild(textarea);
+        console.log(id);
+        consoe.log(className);
       }
       if (name === 'div') { // fixed the typo here, it should be 'button' not 'buttton'
         let div = document.createElement('div');
+        div.setAttribute('id', id);
+        div.classList.add(className);
         document.body.appendChild(div);
+        console.log(id);
+        consoe.log(className);
       }
     }
   };
